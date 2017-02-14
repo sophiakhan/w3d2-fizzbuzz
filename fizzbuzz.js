@@ -2,11 +2,30 @@ var avow = require('avow');
 
 function FizzBuzz (n) {
     var output = '';
+
+    for (var i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            output += 'FizzBuzz';
+        }
+
+        else if (i % 5 === 0) {
+            output += 'Buzz';
+        }
+        
+       else if (i % 3 === 0) {
+            output +='Fizz';
+        }
+
+        else {
+            output +='.';
+        }
+    }
+
     return output;
 
-    if 
-
 }
+
+FizzBuzz(15);
 
 
 avow('FizzBuzz 1 should be .', '.' === FizzBuzz(1), '.', FizzBuzz(1));
