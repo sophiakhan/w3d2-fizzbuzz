@@ -1,5 +1,6 @@
 var avow = require('avow');
 
+// defining the function, setting up argument
 function FizzBuzz (n) {
     var output = '';
 
@@ -21,11 +22,13 @@ function FizzBuzz (n) {
         }
     }
 
+//  outside for brackets so it doesn't print loop after the first run, return prints output 
     return output;
 
 }
 
-FizzBuzz(15);
+// calls the function and tells it how many times to run for n
+// FizzBuzz(15);
 
 
 avow('FizzBuzz 1 should be .', '.' === FizzBuzz(1), '.', FizzBuzz(1));
